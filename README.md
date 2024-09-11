@@ -1,5 +1,4 @@
 
-<!doctype html>
 <html lang="en">
 <!-- Created by: Victorine Nsoh  - Created on: 07/09/2024 -->
 <head>
