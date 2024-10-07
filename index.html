@@ -1,27 +1,125 @@
+<!DOCTYPE html>
 <html lang="en">
-<!-- Created by: Victorine Nsoh  - Created on: 07/09/2024 -->
 <head>
-<title>SOFTWARE ENGINEERING - COMP213 Home Page</title>
-<meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected Areas</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #77aede;
+            text-align: center;
+        }
+        .banner {
+            width: 100%;
+            height: auto;
+        }
+        .content {
+            width: 80%;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .footer {
+            position: absolute;
+            margin-top: 300px;
+            font-size: 0.8em;
+        }
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #e5e3e6;
+  font-size: 17px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+    </style>
 </head>
-<body style="font-family:Verdana; color:gray; background-color:lavender;">
-<div style="width:980px; margin-left:auto; margin-right:auto;">
-<header>
-<img src="logo.gif" alt="Setas logo">
-<h3>COMP213 - Web Interface Design - <span lang="en-ca">Fall</span> 20<span lang="en-ca">24</span></h3>
-<h4>Student Name:Victorine Enjowe Nsoh  - Student # 301478610</h4>
-</header>
-	<main>
-&nbsp;Some of my favorite things to do  are:
-<ul style="list-style-image:url(animated-bullet-10.gif)">
-<li>Watching movies</li>
-<li>family time</li>
-<li>Reading</li>
-<li>Browsing the net</li>
-<li>Traveling</li>
-<li>listening to music</li>
-</ul>
-	</main>
-	<footer>
-<h6>&copy;&nbsp;Copyright Victorine Enjowe Nsoh - COMP213 - <span lang="en-ca">Fall</span> 20<span lang="en-ca">24</span></h6>
-</footer>
+<body>
+    <!-- Name: Victorine Enjowe Nsoh, Student Number: 301478610 -->
+    <div class="content">
+        <h3> Protected Areas </h3>
+        <img src="banner2.jpg" alt="Banner Image" class="banner">
+        <p>Protected areas, like national parks and wildlife reserves,are essential for conserving biodiversity and protecting ecosystems from human activities.These areas help preserve endangered species and maintain ecological balance,which is increasingly important amid threats like deforestation and climate change.Additionally, protected areas support scientific research, environmental education,and sustainable tourism, emphasizing their crucial role in promoting global ecological sustainability.
+
+        </p>
+
+            <li><a href="https://iucn.org/our-work/topic/effective-protected-areas" target="_blank">IUCN - Effective Protected Areas</a></li>
+            <li><a href="https://www.iucn.org/theme/protected-areas" target="_blank">IUCN - Protected Areas</a></li>
+            <li><a href="https://www.protectedplanet.net/en" target="_blank">Protected Planet - Protected Areas</a></li>
+            <li><a href="https://earth.org/protected-areas-the-past-present-and-future-of-conservation/" target="_blank">Protected Areas</a></li>
+            <li><a href="https://wwf.panda.org/discover/people_and_conservation/protected_and_conserved_areas/" target="_blank">WWF - Protected Planet Report</a></li>
+            <li><a href="https://iucn.org/news/protected-areas/201811/iucn-lists-15-new-sites-worlds-best-protected-areas" target="_blank">IUCN - Protected Areas</a></li>
+        </ul>
+        <div>
+        <h2> Gallery of some protected areas</h2>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img/hippo.jpg">
+                <img src="img/hippo.jpg" alt="Cinque Terre" width="600" height="400">
+              </a>
+              <div class="desc">Hippopotamuses in protected areas thrive with abundant water and grazing land,
+                 safeguarded from poaching and habitat loss.</div>
+            </div>
+          </div>
+          
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img/kaniaryte.jpg">
+                <img src="img/kaniaryte.jpg" alt="Forest" width="600" height="400">
+              </a>
+              <div class="desc">A majestic brown buffalo stands proudly on a lush green grass field, showcasing the buffalo in its natural habitat.</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img/rock.jpg">
+                <img src="img/rock.jpg" alt="Northern Lights" width="600" height="400">
+              </a>
+              <div class="desc">A rugged brown rocky mountain rises majestically under a pristine white sky. 
+            </div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img/lake.jpg">
+                <img src="img/lake.jpg" alt="Mountains" width="600" height="400">
+              </a>
+              <div class="desc">The Grand Prismatic Spring in Yellowstone National Park
+            </div>
+            </div>
+          </div>
+    </div>
+    <br/>
+    <div class="footer">
+        &copy; 2024 Victorine Enjowe Nsoh, Student Number: 301478610, Assignment 2. Image credits: <a href="https://www.pexels.com/search/protected%20area/" target="_blank">https://www.pexels.com/search/protected%20area/</a>
+    </div>
+</body>
+</html>
