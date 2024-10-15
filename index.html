@@ -1,27 +1,129 @@
-<html lang="en">
-<!-- Created by: Victorine Nsoh  - Created on: 07/09/2024 -->
+<!DOCTYPE html>
+<html>
 <head>
-<title>SOFTWARE ENGINEERING - COMP213 Home Page</title>
-<meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>Candle Product Page</title>
+    <style>
+        body {
+            font-family: sans-serif, Arial;
+        }
+        .content {
+            width: 980px;
+            margin: 0 auto;
+        }
+        .banner {
+            background-image: url('laptop-image.jpg');
+            background-size: cover;
+			width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .banner a {
+            display: block;
+        }
+		
+        .hotspot {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .hotspot a {
+            display: block;
+            margin: 10px 0;
+        }
+		.content table th {
+			background-color: darkgoldenrod;
+			color: white;
+		}
+		.content table {
+			width: 800px;
+			border : 1px;
+			border-collapse: collapse;
+			margin-top: 10px;
+		}
+		th, td {
+            border: 1px solid darkgoldenrod;
+            padding: 10px;
+            text-align: center;
+        }
+		section {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        section .image {
+            margin-right: 20px;
+        }
+
+        section .description {
+            margin: 0;
+        }
+		section h2 {
+            margin: 0 0 10px 0; 
+            font-size: 1.5em; 
+        }
+    </style>
 </head>
-<body style="font-family:Verdana; color:gray; background-color:lavender;">
-<div style="width:980px; margin-left:auto; margin-right:auto;">
-<header>
-<img src="logo.gif" alt="Setas logo">
-<h3>COMP213 - Web Interface Design - <span lang="en-ca">Fall</span> 20<span lang="en-ca">24</span></h3>
-<h4>Student Name:Victorine Enjowe Nsoh  - Student # 301478610</h4>
-</header>
-	<main>
-&nbsp;Some of my favorite things to do  are:
-<ul style="list-style-image:url(animated-bullet-10.gif)">
-<li>Watching movies</li>
-<li>family time</li>
-<li>Reading</li>
-<li>Browsing the net</li>
-<li>Traveling</li>
-<li>listening to music</li>
-</ul>
-	</main>
-	<footer>
-<h6>&copy;&nbsp;Copyright Victorine Enjowe Nsoh - COMP213 - <span lang="en-ca">Fall</span> 20<span lang="en-ca">24</span></h6>
-</footer>
+<body>
+    <div class="content">
+        <div class="banner">
+            <a href="https://www.funistree.com/shop/" target="_blank">
+                <img src="images/banner.jpg" alt="funistree">
+            </a>
+			<br/>
+        </div>
+		<h1 style="margin-top: 2em;">Home furniture shop</h1>
+		
+      <section>
+		<div class="image">
+			<img src="images/candle.jpg" alt="Cander warmer" style="width: 200px;">
+			<a href="details.html">View Larger Picture </Picture></a>
+		</div>
+		<div class="description">
+		<h2>Cander warmer</h2>
+		<p>Candle Warmer Lamp with Timer, Metal White Candle Lamp Warmer Adjustable Height for Jar Candles,
+			House Warming Gifts New Home, Dimmable Wax Warmer for Scented Wax for Home Decor, Relaxing Gifts.
+			Our electric candle warmer features diverse, beautiful designs that can complement any home decor, adding warmth and charm.
+			<br>
+			 The candle melting lamp is a gorgeous room addition making your home more cozy and let you enjoy the pure scents of your favorite jar candles. 
+			It is a great cozy room decor and suitable for vantage home decor gifts or house warming gifts new home.</p>
+		</div>
+		</section>
+		<table>
+			<tr>
+			  <th>Description</th>
+			  <th>Price</th>
+			</tr>
+			<tr>
+			  <td>Model 2000</td>
+			  <td>48$</td>
+			</tr>
+			<tr>
+				<td>Model 2001</td>
+				<td>39$</td>
+			</tr>
+			<tr>
+				<td>Model 20043</td>
+				<td>50$</td>
+			</tr>
+			<tr>
+				<td>Model 2364</td>
+				<td>60$</td>
+			</tr>
+		  </table>
+
+        <div class="hotspot">
+            <h2>Local Distributors:</h2>
+            <p>Click on a province to find local distributors:</p>
+			<a href="https://www.funistree.com/shop/" target="_blank">Quebec</a>
+            <a href="https://www.funistree.com/shop/" target="_blank">New Brunchwick</a>
+            <a href="https://www.funistree.com/shop/" target="_blank">Ontario</a>
+
+        </div>
+        
+        <!-- Student Name: Victorine Enjowe Nsoh | Student Number: 301478610 -->
+
+    </div>
+</body>
+</html>
