@@ -1,159 +1,30 @@
-<html >
 
+<html>
 <head>
-  <title>CE Course/Instructor Evaluation</title>
-  <link rel="stylesheet" href="styles.css">
+<title>Special Bites - Welcome</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-    <a href="https://www.centennialcollege.ca/" target="_blank"><img src="collegelogo.jpg" alt="Centennial College Logo" class="logo"></a>
-    <h1>CENTENNIAL COLLEGE</h1>
-    <h3>Continuing Education Course/Instructor Evaluation</h3>
-  </header>
-
-  <main>
-    <p>
-      Please read each statement carefully and consider each one individually. Use the computer card to make your choice
-      (use a pencil to fill in the space). Give only one answer for each question.
-    </p>
-
-    <form action="/submit-evaluation" method="post">
-      <fieldset>
-        <legend>Course Information</legend>
-
-        <label for="course-name">Course Name:</label>
-        <input type="text" name="course-name" id="course-name" required>
-
-        <label for="semester">Semester:</label>
-        <select name="semester" id="semester" required>
-          <option value="Fall">Fall</option>
-          <option value="Winter">Winter</option>
-          <option value="Spring">Spring</option>
-          <option value="Summer">Summer</option>
-        </select>
-
-        <label for="instructor-name">Instructor Name:</label>
-        <input type="text" name="instructor-name" id="instructor-name" required>
-
-        <label for="year">Year:</label>
-        <input type="text" name="year" id="year" required>
-      </fieldset>
-
-      <fieldset>
-        <legend>Instructor Evaluation</legend>
-
-        <div class="question">
-          <p>1. <span class="bold">Knowledge</span>  of the subject?</p>
-          <input type="radio" name="instructor-knowledge" value="1" required>Excellent
-          <input type="radio" name="instructor-knowledge" value="2">Good
-          <input type="radio" name="instructor-knowledge" value="3">Fair
-          <input type="radio" name="instructor-knowledge" value="4">Not Satisfactory
-        </div>
-
-        <div class="question">
-          <p>2. <span class="bold">Helpfulness?</span></p>
-          <input type="radio" name="instructor-help" value="1" required>Excellent
-          <input type="radio" name="instructor-help" value="2">Good
-          <input type="radio" name="instructor-help" value="3">Fair
-          <input type="radio" name="instructor-help" value="4">Not Satisfactory
-        </div>
-
-        <div class="question">
-          <p>3. <span class="bold">Courtesy and respect</span> for all students?</p>
-          <input type="radio" name="instructor-respect" value="1" required>Excellent
-          <input type="radio" name="instructor-respect" value="2">Good
-          <input type="radio" name="instructor-respect" value="3">Fair
-          <input type="radio" name="instructor-respect" value="4">Not Satisfactory
-        </div>
-
-        <div class="question">
-          <p>4. <span class="bold">Communication</span> skills?</p>
-          <input type="radio" name="instructor-com" value="1" required>Excellent
-          <input type="radio" name="instructor-com" value="2">Good
-          <input type="radio" name="instructor-com" value="3">Fair
-          <input type="radio" name="instructor-com" value="4">Not Satisfactory
-        </div>
-
-        <div class="question">
-          <p>5. Overall <span class="bold">performance</span>?</p>
-          <input type="radio" name="instructor-perf" value="1" required>Excellent
-          <input type="radio" name="instructor-perf" value="2">Good
-          <input type="radio" name="instructor-perf" value="3">Fair
-          <input type="radio" name="instructor-perf" value="4">Not Satisfactory
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>Course Evaluation</legend>
-
-        <div class="question">
-          <p>6. How would you rate the <span class="bold">course materials</span>?</p>
-          <input type="radio" name="course-materials" value="1" required>Excellent
-          <input type="radio" name="course-materials" value="2">Good
-          <input type="radio" name="course-materials" value="3">Fair
-          <input type="radio" name="course-materials" value="4">Not Satisfactory
-        </div>
-
-        <div class="question">
-          <p>7. How much did this course meet your <span class="bold">expectations</span>?</p>
-          <input type="radio" name="course-expectations" value="1" required>Excellent
-          <input type="radio" name="course-expectations" value="2">Good
-          <input type="radio" name="course-expectations" value="3">Fair
-          <input type="radio" name="course-expectations" value="4">Not Satisfactory
-        </div>
-
-        <div class="question">
-          <p>8. How would you rate this course <span class="bold">overall</span>?</p>
-          <input type="radio" name="course-overall" value="1" required>Excellent
-          <input type="radio" name="course-overall" value="2">Good
-          <input type="radio" name="course-overall" value="3">Fair
-          <input type="radio" name="course-overall" value="4">Not Satisfactory
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>General Information</legend>
-
-        <div class="question">
-          <p>9. Was the course outline reviewed/explained at the beginning of the course?</p>
-          <input type="radio" name="course-outline" value="1" required>Yes
-          <input type="radio" name="course-outline" value="2">No
-          <input type="radio" name="course-outline" value="3">Not Sure
-        </div>
-
-        <div class="question">
-          <p>10. Would you recommend this course to a friend with the same interest?</p>
-          <input type="radio" name="recommend-course" value="1" required>Yes
-          <input type="radio" name="recommend-course" value="2">No
-          <input type="radio" name="recommend-course" value="3">Not Sure
-        </div>
-
-        <div class="question">
-          <label for="comments">11. What is the best thing about this course:</label>
-          <textarea name="comments" id="comments" cols="30" rows="3"></textarea>
-        </div>
-
-        <div class="question">
-          <label for="improve">12. How could we <span class="bold">improve</span> this course:</label>
-          <textarea name="improve" id="improve" cols="30" rows="3"></textarea>
-        </div>
-
-        <div class="question">
-          <label for="others">13. Others:</label>
-          <textarea name="others" id="others" cols="30" rows="3"></textarea>
-        </div>
-      </fieldset>
-
-      <input type="submit" value="Submit Evaluation">
-    </form>
-  </main>
-
-  <footer>
-    <p>Thank you! We pay attention to your feedback.</p>
-    <p>Web: <a href="https://www.centennialcollege.ca/">www.centennialcollege.ca/continuing_education</a></p>
-    <p>Email: <a href="mailto:continuingeducation@centennialcollege.ca">continuingeducation@centennialcollege.ca</a></p>
-  </footer>
+    <header>
+        <img src="images/logo.png" alt="Restaurant Logo" class="logo">
+        <h1>Special Bites</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to Special Bites</h2>
+        <p>Discover delicious tasty snacks served fresh daily. We pride ourselves on delivering the finest snacks made with love.</p>
+        <img src="images/restoimage.jpg" alt="Restaurant Image">
+    </main>
+    <footer>
+        <p>&copy; 2024 [Victorine Enjowe Nsoh]. Assignment: Web Design. Images and info credits: MrWallpaper.</p>
+    </footer>
 </body>
-
 </html>
